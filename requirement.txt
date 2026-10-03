@@ -3,3 +3,4 @@ langchain-groq
 langchain-mistralai
 python-dotenv
 langchain-huggingface
+streamlit

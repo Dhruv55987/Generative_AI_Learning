@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<div class="chat-container">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <h1>AI Chatbot</h1>
+        <p>Choose your AI personality</p>
+    </div>
+
+    <!-- Mode Selection -->
+    <div class="mode-selection">
+
+        <button class="mode-btn angry" onclick="selectMode(1)">
+            😡 Angry
+        </button>
+
+        <button class="mode-btn sad" onclick="selectMode(2)">
+            😢 Sad
+        </button>
+
+        <button class="mode-btn funny" onclick="selectMode(3)">
+            😂 Funny
+        </button>
+
+    </div>
+
+    <div class="selected-mode">
+        Current Mode:
+        <span id="currentMode">None</span>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="chat-box" id="chatBox">
+
+        <div class="bot-message">
+            Hello! Choose an AI mode and start chatting.
+        </div>
+
+    </div>
+
+    <!-- Input -->
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Type your message..."
+        >
+
+        <button onclick="sendMessage()" class="send-btn">
+            Send
+        </button>
+
+    </div>
+
+    <!-- Exit -->
+    <button onclick="exitChat()" class="exit-btn">
+        Exit Chat
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
